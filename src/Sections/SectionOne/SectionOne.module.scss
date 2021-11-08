@@ -1,0 +1,120 @@
+@import '../../../src/index.scss';
+
+.main_container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0rem 3rem;
+    @include media("mobileonly") {
+     // padding: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    @include media("tablet") {
+      //padding: 1.5rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    @include media("mini-laptop") {
+      //padding: 2rem 3.5rem;
+    }
+    .left_col {
+     //   padding-right: 2.5rem;
+        margin-top: 60px;
+        @include media("mobileonly") {
+          padding-right: 0rem;
+          width: 100%;
+        }
+        @include media("tablet") {
+          padding-right: 0rem;
+          padding-bottom: 2rem;
+          width: 100%;
+          text-align: center;
+        }
+    }
+
+    .col1_div {
+        @include media("mobileonly") {
+          padding-right: 0rem;
+          
+        }
+
+        h1 {
+          font-size: 50px;
+         // font-family: Poppins-Bold;
+          color: black;
+          white-space: nowrap;
+          font-weight: bolder;
+         
+          @include media("mobileonly") {
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+            line-height: 27px;
+            font-weight: normal;
+           
+            margin-right: 50px;
+          }
+          @include media("tablet") {
+            font-size: 44px;
+            text-align: center;
+            justify-content: center;
+            line-height: 31px;
+            
+          }
+
+        }
+        p {
+          font-size: 18px;
+        //  font-family: Poppins-Regular;
+          margin-bottom: 1rem;
+          width: 80%;
+          @include media("mobileonly") {
+            font-size: 12.5px;
+           // font-family: Popppins-Regular;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            padding: 0rem 1.2rem;
+          }
+          @include media("tablet") {
+            font-size: 18px;
+          //  font-family: Poppins-Regular;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            padding: 0rem 1.2rem;
+          }
+        } 
+        .btn_container{
+            margin-top: 40px;
+            .btn2{
+             margin-left: 10px;
+             color: #EF5DA8;
+             background-color: white;
+             border: none;
+            }
+            .btn1{
+                color: white;
+                background-color: #EF5DA8;
+                border: none;
+            }
+        }
+    }
+    .right_col{
+        .col2_div{
+            img{
+                height: auto;
+                width: 100%;
+                @include media("mobileonly") {
+                    height: auto;
+                width: 100%;
+                  }
+                  @include media("tablet") {
+                    height: auto;
+                    width: 100%;
+                  }
+                
+            }
+        }
+      
+    }
+   
+}

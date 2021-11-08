@@ -1,0 +1,56 @@
+@import '../../../src/index.scss';
+
+.main_container{
+    // background-image: url('../../Assets/Images/sectionFour/image4.png');
+    // background-image: url('../../../public/Assets/Images/sectionFour/image4.png');
+    background-image: url(../../../src/Assets//Images/sectionFour/image4.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+overflow: hidden;
+
+
+.overly_container{
+    min-height: 80vh;
+    background-color: #3131388c;
+   // opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .heading_container{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        h1{
+            font-size: 3rem;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+    
+    }
+   
+   
+}
+.btn_container{
+    .button1{
+        color: pink;
+        background-color: white;
+        margin-top: 12rem;
+        font-size: 14px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    
+     }
+}
+}

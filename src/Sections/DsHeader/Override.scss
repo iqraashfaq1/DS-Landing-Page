@@ -1,0 +1,35 @@
+@import '../../../src/index.scss';
+
+navbar-collapse {
+  
+    @include media("mobileonly") {
+      background-color: #EF5DA8;
+      float: right !important;
+      background-size: cover;
+    
+      
+    }
+  }
+  .nav-link {
+    @include media("mobileonly") {
+      color: white !important;
+      display: flex;
+      flex-direction: column;
+    } 
+}
+.navbar-light{
+  .navbar-toggler{
+    @include media("mobileonly") {
+      border: none !important;
+      .navbar-toggler-icon {
+        width: 2rem !important;
+      }
+    }
+   
+  }
+}
+.navbar-toggler:focus{
+  @include media("mobileonly") {
+    box-shadow: none !important;
+  }
+}

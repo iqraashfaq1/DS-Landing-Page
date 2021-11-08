@@ -1,0 +1,63 @@
+@mixin media($breakpoint) {
+  
+    @if $breakpoint == land {
+      @media only screen and (max-width: 1450px) {
+        @content;
+      }
+    }
+    @if $breakpoint == desktop {
+      @media only screen and (max-width: 1799px) {
+        @content;
+      }
+    }
+    @if $breakpoint == desktop-large {
+      @media only screen and (min-width: 1800px) {
+        @content;
+      }
+    }
+    @if $breakpoint == mobileonly {
+      @media only screen and (max-width: 600px) {
+        @content;
+      }
+    }
+    @if $breakpoint == tablet {
+      @media only screen and (max-width: 1025px) and (min-width:601px) {
+        @content;
+      }
+    }
+    @if $breakpoint == mini-laptop {
+      @media only screen and (max-width: 1450px ) and ( min-width: 1026px) {
+        @content;
+      }
+    }
+
+  //   @font-face {
+  //       font-family: Poppins-Bold;
+  //       src: url("/Fonts/Poppins-Bold.ttf") format("truetype");
+  //     }
+  //     @font-face {
+  //       font-family: Poppins-ExtraBold;
+  //       src: url("../src/Fonts/Poppins-ExtraBold.ttf") format("truetype");
+  //     }
+  //     @font-face {
+  //       font-family: Poppins-SemiBold;
+  //       src: url("../src/Fonts/Poppins-SemiBold.ttf") format("truetype");
+  //     }
+  //     @font-face {
+  //       font-family: Poppins-Regular;
+  //       src: url("../src/Fonts/Poppins-Regular.ttf") format("truetype");
+  //     }
+  //     @font-face {
+  //       font-family: Poppins-Light;
+  //       src: url("../src/Fonts/Poppins-Light.ttf") format("truetype");
+  //     }
+  //     @font-face {
+  //       font-family: Poppins-ExtraLight;
+  //       src: url("../src/Fonts/Poppins-ExtraLight.ttf") format("truetype");
+  //     }
+  //     @font-face {
+  //       font-family: Poppins-Medium;
+  //       src: url("../src/Fonts/Poppins-Medium.ttf") format("truetype");
+  //     }
+  } 
+  

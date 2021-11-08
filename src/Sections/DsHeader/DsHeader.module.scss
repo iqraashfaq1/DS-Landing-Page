@@ -1,0 +1,59 @@
+@import '../../../src/index.scss';
+.main_nav{
+
+    background-color: transparent;
+    border: none;
+    padding: 4rem;
+    color: #6B7280;
+    overflow: hidden;
+    @include media("mobileonly") {
+        padding: 0rem !important;
+      }
+
+.logo_container{
+
+    .logo{
+        width: 3.5rem;
+        @include media("mobileonly") {
+            width: 3.8rem;
+            margin-left: 0.6rem !important;
+          }
+    }
+}
+.nav_menu{
+    margin: auto;
+    display: flex;
+    margin-right: 15rem;
+    float: right;
+    color: #6B7280;
+    
+  @include media("mobileonly") { 
+    display: contents;
+  }
+}
+.proj_btn1{
+    color: #6B7280;
+    border: none;
+    background-color:white;
+    margin-right: 1rem;
+       
+  @include media("mobileonly") { 
+    color: #6B7280;
+    background-color: white;
+    margin: 1rem 10rem 1rem  !important;
+
+  }
+}
+.proj_btn2{
+    color: white;
+    border: none;
+    background-color:#EF5DA8;
+       
+  @include media("mobileonly") { 
+    // color: black;
+    // background-color: white;
+    margin: 1rem 10rem 1rem  !important;
+
+  }
+}
+}
